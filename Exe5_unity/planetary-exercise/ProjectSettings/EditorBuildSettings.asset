@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene2.unity
     guid: 75ec6763cf39f4b8f9a2668bf73846a5
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: b8ecc30cf09aa4b839b64bbcb15da928, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 6e2671755820d43259aa3a5991096494, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ffcf59b107bc44025a927c7094e3038d, type: 2}
