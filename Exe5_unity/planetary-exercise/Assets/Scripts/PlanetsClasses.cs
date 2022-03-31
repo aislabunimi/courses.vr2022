@@ -61,7 +61,7 @@ public class Sun
 public class Mercury
 {
  public Vector3 initialPosition =
-  new Vector3(3.282134370403665E-01f, -2.032631574189585E-01f, -4.770078468513123E-02f);
+  new Vector3(1.4f, -2.032631574189585E-01f, -4.770078468513123E-02f);
 
  public Vector3 initialVelocity =
   new Vector3(9.329298657367415E-03f, 2.517410076060754E-02f, 1.201542950667524E-03f);

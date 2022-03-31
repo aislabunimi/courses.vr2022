@@ -29,7 +29,6 @@ public class CameraDragAndMove : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -37,10 +36,10 @@ public class CameraDragAndMove : MonoBehaviour
             return;
         }
 
-        if (!Input.GetMouseButtonDown(0)) return;
+        if (!Input.GetMouseButton(0)) return;
 
         Vector3 pos = camera.ScreenToViewportPoint(dragOrigin - Input.mousePosition);
-        Vector3 move = new Vector3(pos.x * dragSpeed, pos.y * dragSpeed, 0f);
+        Vector3 move = new Vector3(pos.x * dragSpeed * Time.deltaTime, pos.y * dragSpeed * Time.deltaTime, 0f);
         
         transform.Translate(move, Space.World);
     }
